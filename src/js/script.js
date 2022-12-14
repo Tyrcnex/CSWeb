@@ -6,16 +6,14 @@ let cancelButton = document.getElementById('cancel');
 let popUpSection = document.getElementById('popups');
 
 htmlElement.style.overflowY = 'hidden';
-popUpSection.style.zIndex = '100'; // ! REMOVE LATER
 
-/*
 setTimeout(() => {
     document.getElementById('load').classList.add('hide');
     setTimeout(() => {
         document.getElementById('load').style.display = 'none';
         htmlElement.style.overflowY = 'scroll';
     }, 1000)
-}, 2000); */
+}, 2000);
 
 function cancelFunc() {
     cancelButton.style.display = 'none';
