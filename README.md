@@ -8,6 +8,8 @@ Website: https://tyrcnex.github.io/CSWeb
 ## Hello!
 This place is just for me to backup my code in case anything goes wrong. It's also a resource, in case some of you want to view my code or anything. I've organized it a lot, but it's a little bit hard to navigate. I'll explain bits of the code here.
 
+## How the code works ↓
+
 ## Root folder <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="folder" width="20"/>
 
 ### `index.html`
