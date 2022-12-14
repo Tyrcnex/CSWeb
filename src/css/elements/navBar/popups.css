@@ -1,0 +1,69 @@
+@import url('../../presets.css');
+
+/* Main popup container */
+
+#popups {
+    position: fixed;
+    width: 120vw;
+    height: 120vh;
+    z-index: -5;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Each popup */
+
+.popup {
+    width: 90vw;
+    height: 75vh;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.2);
+    border: 2px solid black;
+    position: fixed;
+    opacity: 0;
+    background: white;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    animation: fadeOut 0.5s;
+}
+
+.popup.popUpShow { /* For the popup that shows up. */
+    animation: fadeIn 0.5s;
+    display: block;
+    overflow-y: scroll;
+    opacity: 1;
+}
+
+/* Cancel button */
+
+#cancel {
+    position: fixed;
+    left: 87%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+/* --- The below section contains the CSS for the content of each popup. --- */
+
+/* Explore Section */
+.explore-place {
+    float: left;
+    border: 1px solid black;
+    width: 31%;
+    margin: 0px 1% 0px 1%;
+    /* Center all children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-img {
+    max-width: 90%;
+    height: auto;
+}

@@ -1,0 +1,50 @@
+@import url('../../presets.css');
+
+/* Main navigation bar container */
+#navBar {
+    width: 120vw;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    top: -2px;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.2);
+    border: 1px solid black;
+    transform: translateX(-10px);
+}
+
+/* Sub containers (words) */
+
+.item {
+    display: inline-block;
+    margin: 0px 0px 0px 50px;
+    font-size: min(30px, 4vw);
+    background: #fff;
+    font-family: "Unfiltered Worn Large";
+    cursor: pointer;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0);
+}
+
+.item:hover {
+    background: rgb(240, 240, 240);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1);
+}
+
+.item p {
+    top: 50%;
+    transform: translate(0%, -40%);
+    padding: 30px;
+}
+
+/* Sub containers (Victoria home button) */
+
+#victoriaHome {
+    max-height:80%;
+    max-width:80%;
+    position: relative;
+    top: 50%;
+    left: 20px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}
