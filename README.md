@@ -13,7 +13,7 @@ This place is just for me to backup my code in case anything goes wrong. It's al
 ## Root folder <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="folder" width="20"/>
 
 ### `index.html`
-This is the html file you see in the root (main) folder. All it does is redirect to src/pages/index.html, and add the embed you see on Discord when you paste the website link in.
+This is the html file you see in the root (main) folder. All it does is redirect to `src/pages/index.html`, and add the embed you see on Discord when you paste the website link in.
 
 ### images <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="folder" width="20"/> , fonts <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="folder" width="20"/>
 These are quite straightforward.
@@ -36,5 +36,5 @@ I only have one page currently, `index.html`. This is the main file, as all of y
 
 <br>
 
-> Further code descriptions coming soon! DM Tyrcnex#9403 if you need help.
+> Further code descriptions coming soon! DM Tyrcnex#9403 on Discord if you need help.
 
