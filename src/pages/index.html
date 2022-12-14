@@ -5,34 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta content="Australia" property="og:title" />
-    <meta content="Explore Australia" property="og:description" />
-    <meta content="" property="og:url" />
-    <meta content="" property="og:image" />
+	<meta content="Victoria" property="og:title" />
+    <meta content="This is a CS project, by Tyrcnex.&#10;&#10;Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!" property="og:description" />
+    <meta content="https://tyrcnex.github.io/CSWeb" property="og:url" />
+    <meta content="./images/victoriaMap.png" itemprop="image" property="og:image" />
     <meta content="#00c455" data-react-helmet="true" name="theme-color" />
 
-    <title>Australia</title>
-	<meta name="description" content="Explore Australia">
-    <link rel="stylesheet" href="../css/all.css">
-
+    <title>Victoria - Australia's Adventure-Filled State</title>
+	<meta name="description" content="Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!">
+    <link rel="stylesheet" href="../css/all.css" type="text/css">
+    <link rel="icon" href="../../images/victoria.png" type="image/icon type">
 </head>
 <body>
     <div id="popups">
+        <!--! About !-->
         <div class="popup" id="preview-about"></div>
+
+        <!--! Explore !-->
         <div class="popup" id="preview-explore">
+            
+        </div>
+
+        <!--! Attractions !-->
+        <!--! REMOVE POPUPSHOW LATER VERY IMPORTANT-->
+        <div class="popup popUpShow" id="preview-attractions">
             <div class="explore-place">
                 <img src="../../images/phillipisland.png" class="explore-img">
+                <div style="height: 10px;"></div>
+                <p class="explore-header">Phillip Island</p>
+                <p>Welcome to Phillip Island!</p>
+                <a href="https://www.google.com" class="seeMoreLink">Click to see more ➪</a>
             </div>
             <div class="explore-place">
-                <img src="../../images/phillipisland.png" class="explore-img">
-            </div>
-            <div class="explore-place">
-                <img src="../../images/phillipisland.png" class="explore-img">
+                <img src="../../images/greatoceanroad.jpeg" class="explore-img">
+                <div style="height: 10px;"></div>
+                <p class="explore-header">Great Ocean Road</p>
             </div>
         </div>
-        <div class="popup" id="preview-attractions"></div>
+
+        <!--! Stays !-->
         <div class="popup" id="preview-stays"></div>
+
+        <!--! Visit !-->
         <div class="popup" id="preview-visit"></div>
+
+        <!--! Cancel Button !-->
         <div id="cancel"><img src="../../images/cancel.png" width="30px" height="auto"></div>
     </div>
     <div id="navBar">
@@ -49,7 +66,7 @@
         </div>
     </div>
     <div style="height: 2000px;"></div>
-    <div id="load">
+    <div id="load hide">
         <img src="../../images/loading.gif" height="40px" width="auto">
     </div>
     <script src="../js/script.js"></script>
