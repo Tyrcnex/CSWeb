@@ -20,7 +20,7 @@
     height: 75vh;
     box-shadow: 0 0px 20px 0 rgba(0,0,0, 0.4);
     border: 1px solid rgba(0,0,0,0.2);
-    position: fixed;
+    position: absolute;
     opacity: 0;
     background: white;
     left: 50%;
@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
     padding: 50px;
     animation: fadeOut 0.5s;
-    cursor: pointer;
+    z-index: -10;
 }
 
 .popup.popUpShow { /* For the popup that shows up. */
@@ -36,6 +36,7 @@
     display: block;
     overflow-y: auto;
     opacity: 1;
+    z-index: 100;
 }
 
 /* Cancel button */
@@ -45,7 +46,7 @@
     left: 87%;
     top: 23%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 10000;
     cursor: pointer;
     display: none;
 }
@@ -67,8 +68,8 @@
     /* Center all children */
     text-align: center;
     padding: 20px;
-    pointer-events: none;
-    z-index: 1000;
+    z-index: 100;
+    position: relative;
 }
 
 .explore-img {

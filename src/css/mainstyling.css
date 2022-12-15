@@ -9,6 +9,6 @@ html {
     overflow-y: scroll;
 }
 
-body * {
+* {
     z-index: 0;
 }
