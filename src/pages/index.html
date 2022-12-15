@@ -8,13 +8,13 @@
 	<meta content="Victoria" property="og:title" />
     <meta content="This is a CS project, by Tyrcnex.&#10;&#10;Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!" property="og:description" />
     <meta content="https://tyrcnex.github.io/CSWeb" property="og:url" />
-    <meta content="./images/victoriaMap.png" itemprop="image" property="og:image" />
-    <meta content="#00c455" data-react-helmet="true" name="theme-color" />
+    <meta content="./images/victoriaMap.png" itemprop="image" name="og:image" />
+    <meta content="#00c455" data-react-helmet="true" property="theme-color" />
 
     <title>Victoria - Australia's Adventure-Filled State</title>
 	<meta name="description" content="Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!">
     <link rel="stylesheet" href="../css/all.css" type="text/css">
-    <link rel="icon" href="../../images/victoria.png" type="image/icon type">
+    <link rel="icon" href="../../images/victoria.png" type="image/icon">
 </head>
 <body>
     <div id="popups">
@@ -29,14 +29,14 @@
         <!--! Attractions !-->
         <div class="popup" id="preview-attractions">
             <div class="explore-place">
-                <img src="../../images/phillipisland.png" class="explore-img">
+                <img alt="Phillip Island" src="../../images/phillipisland.png" class="explore-img">
                 <div style="height: 10px;"></div>
                 <p class="explore-header">Phillip Island</p>
                 <p>Welcome to Phillip Island!</p>
                 <a href="https://www.google.com" class="seeMoreLink">Click to see more ➪</a>
             </div>
             <div class="explore-place">
-                <img src="../../images/greatoceanroad.jpeg" class="explore-img">
+                <img alt="Great Ocean Road" src="../../images/greatoceanroad.jpeg" class="explore-img">
                 <div style="height: 10px;"></div>
                 <p class="explore-header">Great Ocean Road</p>
             </div>
@@ -49,10 +49,10 @@
         <div class="popup" id="preview-visit"></div>
 
         <!--! Cancel Button !-->
-        <div id="cancel"><img src="../../images/cancel.png" width="30px" height="auto"></div>
+        <div id="cancel"><img src="../../images/cancel.png" width="30"></div>
     </div>
     <div id="navBar">
-        <img src="../../images/victoria.png" id="victoriaHome" onclick="window.location.href='./index.html';">
+        <img alt="Home" src="../../images/victoria.png" id="victoriaHome" onclick="window.location.href='./index.html';">
         <div class="item"><p>About</p></div>
         <div class="item"><p>Explore</p></div>
         <div class="item"><p>Attractions</p></div>
@@ -66,7 +66,7 @@
     </div>
     <div style="height: 2000px;"></div>
     <div id="load">
-        <img src="../../images/loading.gif" height="40px" width="auto">
+        <img alt="Loading" src="../../images/loading.gif" width="40">
     </div>
     <script src="../js/script.js"></script>
 </body>
