@@ -1,5 +1,5 @@
 let fetchedNavBar = false;
-fetch('/src/pages/reusables/nav.html')
+fetch('../pages/reusables/nav.txt')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#navBarPlaceholder");
