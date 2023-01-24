@@ -15,7 +15,7 @@ setTimeout(() => {
                 }
             }, 3000);
         }
-    }, 1000)
+    }, 1000);
 }, 2000);
 
 function run() {
@@ -28,12 +28,13 @@ function run() {
     htmlElement.style.overflowY = 'scroll';
 
     //! DEBUG SETTINGS
-    let debug = true;
+    let debug = !location.protocol.toString().replace(':','').includes('https');
     if (debug) {
         // Show popups on load
         let debugPopUp = 'explore'; /* Empty for no popup, name of popup otherwise */
         if (debugPopUp.length) showPopUp(debugPopUp);
     } else {
+
     }
 
     function cancelFunc() {

@@ -25,7 +25,7 @@
 
 /* Hide the loading screen (handled with JS) */
 #load.hide {
-    transition: 0.6s;
+    transition: var(--animation-speed);
     opacity: 0;
     height: 0; /* This is for making the loading screen "disappear", as in "non-interactable". */
 }

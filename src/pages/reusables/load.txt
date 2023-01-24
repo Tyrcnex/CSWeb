@@ -1,0 +1,5 @@
+<!--! If you're reading this from inspect element, ignore this comment. This file is a .txt file instead of html, because somehow the browser thinks that it violates the CSP or something. It doesn't matter what the file extension is, so I changed it to a .txt to avoid the error. !-->
+
+<div id="load">
+    <img alt="Loading" src="/images/loading.gif" width="40">
+</div>
