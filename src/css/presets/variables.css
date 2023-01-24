@@ -1,0 +1,9 @@
+:root {
+    --animation-speed: 0.5s;
+}
+
+@media (prefers-reduced-motion) {
+    :root {
+        --animation-speed: 0.2s;
+    }
+}
