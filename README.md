@@ -8,6 +8,8 @@ Website: https://tyrcnex.github.io/CSWeb
 ## Hello!
 This place is just for me to backup my code in case anything goes wrong. It's also a resource, in case some of you want to view my code or anything. 
 
+NOTE: OPENING THE HTML FILES WITHOUT A SERVER ON CHROME WILL CAUSE ERRORS DUE TO CHROME'S CORS POLICY. OPEN THIS ON THE WEBSITE, OR WITH A LOCAL SERVER OF SOME TYPE.
+
 # Features:
 
 ### Code features:
