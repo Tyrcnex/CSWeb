@@ -28,10 +28,10 @@ function run() {
     htmlElement.style.overflowY = 'scroll';
 
     //! DEBUG SETTINGS
-    let debug = !location.protocol.toString().replace(':','').includes('https');
+    let debug = !isNaN(location.hostname.split('.')[0]); // Turn on debug mode only if the domain name (split by dot) starts with a number (127.0.0.1 -> 127 turns on debug mode, example.com -> example does not)
     if (debug) {
         // Show popups on load
-        let debugPopUp = 'explore'; /* Empty for no popup, name of popup otherwise */
+        let debugPopUp = 'explore'; // Empty for no popup, name of popup otherwise
         if (debugPopUp.length) showPopUp(debugPopUp);
     } else {
 

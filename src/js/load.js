@@ -1,5 +1,5 @@
 let loadFetched = false;
-fetch('src/pages/reusables/load.txt')
+fetch('src/pages/reusables/load.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#loadPlaceholder");
