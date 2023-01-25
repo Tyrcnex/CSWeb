@@ -4,7 +4,6 @@ function loadNavbar() {
     let cancelButton = document.getElementById('cancel');
     let popUpSection = document.getElementById('popups');
 
-    document.getElementById('load').style.display = 'none';
     htmlElement.style.overflowY = 'scroll';
 
     //! DEBUG SETTINGS FOR NAVBAR
@@ -15,6 +14,11 @@ function loadNavbar() {
     } else {
 
     }
+
+    // Masonry
+    const masonry = new Masonry(document.querySelector('div#preview-explore'),{
+        itemSelector: '.explore-box',
+    })
 
     function cancelFunc() {
         cancelButton.style.display = 'none';

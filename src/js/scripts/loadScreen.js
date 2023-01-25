@@ -3,6 +3,7 @@ setTimeout(() => {
     document.getElementById('load').classList.add('hide');
     if (fetchedNavBar) loadNavbar();
     setTimeout(() => {
+        document.getElementById('load').style.display = 'none';
         if (fetchedNavBar && !navBarGenerated) run();
         if (!fetchedNavBar) {
             const waitUntilRun = setInterval(() => {

@@ -5,7 +5,6 @@
     height: 200vh;
     width: 200vw;
     background: #fff;
-    box-shadow: 0 0px 10px 0 rgba(0,0,0, 0.2);
     opacity: 1;
     z-index: 10000000000;
 
@@ -27,5 +26,5 @@
 #load.hide {
     transition: var(--animation-speed);
     opacity: 0;
-    height: 0; /* This is for making the loading screen "disappear", as in "non-interactable". */
+    height: 0vh; /* This is for making the loading screen "disappear", as in "non-interactable". */
 }
