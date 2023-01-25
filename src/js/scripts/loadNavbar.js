@@ -1,24 +1,4 @@
-let htmlElement = document.documentElement;
-htmlElement.style.overflowY = 'hidden';
-
-let navBarGenerated = false;
-setTimeout(() => {
-    document.getElementById('load').classList.add('hide');
-    if (fetchedNavBar) run();
-    setTimeout(() => {
-        if (fetchedNavBar && !navBarGenerated) run();
-        if (!fetchedNavBar) {
-            const waitUntilRun = setInterval(() => {
-                if (fetchedNavBar) {
-                    run();
-                    clearInterval(waitUntilRun);
-                }
-            }, 3000);
-        }
-    }, 1000);
-}, 2000);
-
-function run() {
+function loadNavbar() {
     navBarGenerated = true;
     let navButtons = [...document.getElementsByClassName('item')];
     let cancelButton = document.getElementById('cancel');
@@ -28,7 +8,6 @@ function run() {
     htmlElement.style.overflowY = 'scroll';
 
     //! DEBUG SETTINGS
-    let debug = !isNaN(location.hostname.split('.')[0]); // Turn on debug mode only if the domain name (split by dot) starts with a number (127.0.0.1 -> 127 turns on debug mode, example.com -> example does not)
     if (debug) {
         // Show popups on load
         let debugPopUp = 'explore'; // Empty for no popup, name of popup otherwise
