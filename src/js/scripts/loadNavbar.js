@@ -7,10 +7,10 @@ function loadNavbar() {
     document.getElementById('load').style.display = 'none';
     htmlElement.style.overflowY = 'scroll';
 
-    //! DEBUG SETTINGS
+    //! DEBUG SETTINGS FOR NAVBAR
     if (debug) {
         // Show popups on load
-        let debugPopUp = 'explore'; // Empty for no popup, name of popup otherwise
+        let debugPopUp = 'attractions'; // Empty for no popup, name of popup otherwise
         if (debugPopUp.length) showPopUp(debugPopUp);
     } else {
 

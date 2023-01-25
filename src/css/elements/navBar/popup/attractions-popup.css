@@ -1,0 +1,29 @@
+.attractions-box {
+    float: left;
+    box-shadow: 0 0px 10px 0 rgba(0,0,0, 0.2);
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 44%;
+    margin: 0px 1% 0px 1%;
+    /* Center all children */
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+    position: relative;
+    transition: var(--animation-speed);
+}
+
+.attractions-box:hover {
+    box-shadow: 0 0px 15px 0 rgba(0,0,0, 0.3);
+    transition: var(--animation-speed);
+}
+
+.attractions-img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.attractions-header {
+    font-size: 25px;
+    font-family: "Unfiltered Worn Large";
+}
