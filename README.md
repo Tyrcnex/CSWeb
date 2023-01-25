@@ -16,6 +16,7 @@ NOTE: OPENING THE HTML FILES WITHOUT A SERVER ON CHROME WILL CAUSE ERRORS DUE TO
 
 - Organization: I've organized this project a lot, particularly the CSS. Instead of including all CSS in one file, I've split it across many files, organized by functionality.
 - CSS variables: Instead of changing all instances of one type of variable (for example, the default animation length), I created a variables.css file, allowing me to adjust this file instead of changing all instances.
+- Dynamic debug: Only turns on debug mode if the website is running on a local server (127.0.0.1)
 
 ### Viewer features:
 
