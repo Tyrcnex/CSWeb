@@ -25,6 +25,8 @@
 .popup {
     max-width: 90vw;
     max-height: 75vh;
+    width: 90vw;
+    height: 75vh;
     box-shadow: 0 0px 20px 0 rgba(0,0,0, 0.4);
     border: 1px solid rgba(0,0,0,0.2);
     position: absolute;

@@ -16,8 +16,9 @@ function loadNavbar() {
     }
 
     // Masonry
-    const masonry = new Masonry(document.querySelector('div#preview-explore'),{
+    new Masonry(document.querySelector('div#preview-explore'),{
         itemSelector: '.explore-box',
+        horizontalOrder: true,
     })
 
     function cancelFunc() {

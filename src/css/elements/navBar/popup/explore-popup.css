@@ -2,14 +2,18 @@
     float: left;
     box-shadow: 0 0px 10px 0 rgba(0,0,0, 0.2);
     border: 1px solid rgba(0,0,0,0.1);
-    width: 40%;
-    margin: 1%;
+    width: 41%;
+    margin: 1vh;
     /* Center all children */
     text-align: center;
     padding: 20px;
     z-index: 100;
     position: relative;
     transition: var(--animation-speed);
+}
+
+@media screen and (max-width: 1100px) {
+    .explore-box { width: 90% }
 }
 
 .explore-box:hover {
