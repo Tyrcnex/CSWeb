@@ -29,19 +29,19 @@
     height: 75vh;
     box-shadow: 0 0px 20px 0 rgba(0,0,0, 0.4);
     border: 1px solid rgba(0,0,0,0.2);
-    position: absolute;
+    position: fixed;
     opacity: 0;
     background: white;
     left: 50%;
     top: 53%;
     transform: translate(-50%, -50%);
     padding: 50px;
-    animation: fadeOut var(--animation-speed);
+    animation: fadeOut calc(var(--animation-speed)/1.5) ease-in;
     z-index: -10;
 }
 
 .popup.popUpShow { /* For the popup that shows up. */
-    animation: fadeIn var(--animation-speed);
+    animation: fadeIn var(--animation-speed) ease-in;
     display: block;
     overflow-y: scroll;
     opacity: 1;
@@ -58,8 +58,8 @@
 
 #cancel {
     position: fixed;
-    left: 87%;
-    top: 23%;
+    left: 93%;
+    top: 20%;
     transform: translate(-50%, -50%);
     z-index: 10000;
     cursor: pointer;

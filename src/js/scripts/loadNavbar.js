@@ -16,9 +16,11 @@ function loadNavbar() {
     }
 
     // Masonry
-    new Masonry(document.querySelector('div#preview-explore'),{
-        itemSelector: '.explore-box',
-        horizontalOrder: true,
+    import('https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js').then(() => {
+        new Masonry(document.querySelector('div#preview-explore'),{
+            itemSelector: '.explore-box',
+            horizontalOrder: true,
+        })
     })
 
     function cancelFunc() {
