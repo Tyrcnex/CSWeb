@@ -18,15 +18,16 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: var(--animation-speed);
 }
 
 /* Each popup */
 
 .popup {
     max-width: 90vw;
-    max-height: 75vh;
+    max-height: 70vh;
     width: 90vw;
-    height: 75vh;
+    height: 70vh;
     box-shadow: 0 0px 20px 0 rgba(0,0,0, 0.4);
     border: 1px solid rgba(0,0,0,0.2);
     position: fixed;
@@ -34,24 +35,18 @@
     background: white;
     left: 50%;
     top: 53%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -46%);
     padding: 50px;
-    animation: fadeOut calc(var(--animation-speed)/1.5) ease-in;
+    animation: fadeOut var(--animation-speed);
     z-index: -10;
+    overflow-y: scroll;
 }
 
 .popup.popUpShow { /* For the popup that shows up. */
-    animation: fadeIn var(--animation-speed) ease-in;
+    animation: fadeIn var(--animation-speed);
     display: block;
-    overflow-y: scroll;
     opacity: 1;
     z-index: 100;
-}
-
-.popup:after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 /* Cancel button */

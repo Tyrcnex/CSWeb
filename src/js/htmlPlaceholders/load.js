@@ -9,8 +9,3 @@ fetch('src/pages/reusables/load.html')
 }).then(() => {
     loadFetched = true;
 })
-
-// Your CSS as text
-let css = document.createElement("style");
-css.innerHTML = `* { cursor: url('https://imgur.com/a/0E9Wh2C'),auto; }`;
-document.head.appendChild(css);
