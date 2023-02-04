@@ -2,6 +2,7 @@ function loadNavbar() {
     navBarGenerated = true;
     let navBar = document.getElementById('navBar');
     let navButtons = [...document.getElementsByClassName('item')];
+    let homeButton = document.getElementById('victoriaHome');
     let cancelButton = document.getElementById('cancel');
     let popUpSection = document.getElementById('popups');
 
@@ -42,11 +43,13 @@ function loadNavbar() {
         htmlElement.style.overflowY = 'scroll';
         popUpSection.style.zIndex = '-5';
         navBar.style.backgroundColor = "";
+        homeButton.style.filter = "";
     }
 
     function showPopUp(id) {
         navBar.style.backgroundColor = `rgb(${window.getComputedStyle(navBar, null).getPropertyValue('background-color').replace('rgba(','').replace(')','').split(',').slice(0,3).join(',')})`;
         navButtons.forEach(e => e.getElementsByTagName('p')[0].style.color = 'rgb(0,0,0)');
+        homeButton.style.filter = "brightness(0%)";
         let previews = [...document.getElementsByClassName('popUpShow')];
         let thisPreviewID = `preview-${id}`;
         previews.filter(e => e.id !== thisPreviewID).forEach(e => e.classList.remove('popUpShow'));
