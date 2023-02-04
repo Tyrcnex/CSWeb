@@ -25,16 +25,16 @@
 
 .popup {
     max-width: 90vw;
-    max-height: 70vh;
+    max-height: calc(65vh + min(5vh, var(--scroll-pos) / 10 * 1vh));
     width: 90vw;
-    height: 70vh;
+    height: calc(65vh + min(5vh, var(--scroll-pos) / 10 * 1vh));
     box-shadow: 0 0px 20px 0 rgba(0,0,0, 0.4);
     border: 1px solid rgba(0,0,0,0.2);
     position: fixed;
     opacity: 0;
     background: white;
     left: 50%;
-    top: 53%;
+    top: calc(53% - min(2%, var(--scroll-pos) / 10 * 1%));;
     transform: translate(-50%, -46%);
     padding: 50px;
     animation: fadeOut var(--animation-speed);
@@ -54,7 +54,7 @@
 #cancel {
     position: fixed;
     left: 93%;
-    top: 20%;
+    top: 25%;
     transform: translate(-50%, -50%);
     z-index: 10000;
     cursor: pointer;
