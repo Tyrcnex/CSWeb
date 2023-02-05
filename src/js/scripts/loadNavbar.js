@@ -43,7 +43,7 @@ function loadNavbar() {
         navButtons.forEach(e => e.getElementsByTagName('p')[0].style.color = 'rgb(0,0,0)');
         homeButton.style.filter = "brightness(0%)";
         let previews = [...document.getElementsByClassName('popUpShow')];
-        let thisPreviewID = `preview-${id}`;
+        let thisPreviewID = `preview-${id.replaceAll(' ','-')}`;
         previews.filter(e => e.id !== thisPreviewID).forEach(e => e.classList.remove('popUpShow'));
         document.getElementById(thisPreviewID).classList.add('popUpShow');
 
