@@ -3,5 +3,5 @@
 let debug = true && !isNaN(location.hostname.split('.')[0]);
 let debugOptions = {
     animationSpeed: 0.1,
-    popup: '', // Empty string for no popup
+    popup: 'explore', // Empty string for no popup
 };

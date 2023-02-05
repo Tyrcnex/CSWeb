@@ -47,6 +47,7 @@
 .n-column-grid {
     display: grid;
     grid-auto-flow: column;
+    grid-gap: 10px;
 }
 
 .p1 {
@@ -59,4 +60,18 @@
 
 .p3 {
     font-size: 20px;
+}
+
+.centerVert {
+    display: flex;
+    align-items: center;
+}
+
+.centerHor {
+    text-align: center;
+}
+
+.centerHorForce {
+    display: flex;
+    justify-content: center;
 }
