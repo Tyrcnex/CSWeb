@@ -17,14 +17,6 @@ function loadNavbar() {
 
     }
 
-    // Masonry
-    import('https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js').then(() => {
-        new Masonry(document.querySelector('div#preview-explore'),{
-            itemSelector: '.explore-box',
-            horizontalOrder: true,
-        })
-    });
-
     // Get scroll position and set to CSS variable --scroll-pos. This variable is used in CSS calculations.
     setInterval(() => {
         document.querySelector(':root').style.setProperty('--scroll-pos', window.scrollY);

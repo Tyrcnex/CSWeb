@@ -1,0 +1,30 @@
+.contentBox {
+    margin: 30px 50px 0px 50px;
+    padding: 20px;
+}
+
+.centerVert {
+    display: flex;
+    align-items: center;
+}
+
+.centerHor {
+    display: flex;
+    justify-content: center;
+}
+
+.contentImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews {
+    width: 100%;
+    height: 80vh;
+}
+
+.restaurantContent {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}

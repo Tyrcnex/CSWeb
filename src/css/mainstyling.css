@@ -8,6 +8,7 @@ html, body {
 html {
     overflow-x: hidden;
     overflow-y: scroll;
+    background-color: rgb(246, 255, 254);
 }
 
 * {
